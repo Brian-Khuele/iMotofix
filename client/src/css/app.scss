@@ -1,0 +1,261 @@
+// app global css in SCSS form
+$subtleTouch: #212c3d;
+$mainContent: whitesmoke;
+$notification: #a9f409;
+
+* {
+  font-family: 'Nunito', sans-serif;
+}
+.main {
+  font-family: 'Nunito', sans-serif;
+}
+
+.sideBar {
+  color: white;
+}
+
+.xx {
+  display: flex;
+  flex-direction: column;
+}
+
+.text-caption {
+  color: rgb(189, 183, 183);
+}
+
+.q-icon {
+  color: $primary;
+}
+
+.bg-mainColor {
+  background: #212c3d;
+}
+
+.mainContent {
+  display: flex;
+  background: $mainContent;
+
+  .routerView {
+    display: flex;
+    flex-grow: 1;
+
+    .divContent {
+      padding: 10px !important;
+      flex-grow: 1;
+      display: flex;
+      flex-direction: column;
+      color: black;
+
+      .tableLearners {
+        color: black !important;
+        margin-top: 10px;
+        box-shadow: 0px 0px 4px 1px black;
+      }
+    }
+  }
+}
+
+.client {
+  box-shadow: 0px 0px 4px 1px rgb(134, 133, 133);
+  margin: 10px;
+  display: flex;
+  gap: 15px;
+  padding: 10px 10px 10px 10px;
+  border-radius: 4px;
+
+  .col {
+    padding: 0;
+    margin: 0;
+  }
+}
+
+.q-toolbar {
+  background: $primary;
+  .q-toolbar__title {
+    color: $subtleTouch;
+  }
+
+  .q-btn__content {
+    color: $subtleTouch !important;
+    background: $subtleTouch !important;
+    border-radius: 50%;
+  }
+}
+
+.q-field__native {
+  color: white !important;
+}
+
+.q-field__label {
+  color: $primary !important;
+}
+
+.q-card {
+  background: $mainContent;
+  color: black;
+  //border: 2px solid $subtleTouch;
+}
+
+th {
+  font-weight: bold !important;
+  color: black;
+}
+
+tbody tr:hover {
+  cursor: pointer !important;
+  box-shadow: 0px 0px 3px 4px $notification;
+}
+
+.dataTableHeader {
+  border: 2px red solid !important;
+}
+
+.dataTable table thead {
+  color: $mainContent;
+}
+.dataTable table {
+  //background: $primary;
+  color: black;
+
+  tr:hover {
+    cursor: default !important;
+    background: none !important;
+  }
+}
+
+.q-field__control {
+  background: $subtleTouch;
+}
+
+.q-tab-panel {
+  background: $mainContent;
+}
+
+.q-tab {
+  color: $subtleTouch !important;
+}
+
+.q-select {
+  color: black;
+}
+
+.q-manual-focusable--focused,
+.q-item--active {
+  background: $subtleTouch;
+  color: white;
+}
+
+.q-stepper__step-inner {
+  height: 78.5vh;
+}
+
+.q-stepper__title {
+  color: $subtleTouch;
+}
+
+//INVOICE STYLES
+.invoiceHeadDetails {
+  .invoiceDate,
+  .invoicePaymentTerms,
+  .invoiceDueDate,
+  .balanceDue,
+  .totalDivs {
+    label {
+      color: $primary;
+      font-weight: 600;
+      align-self: center;
+      width: 100%;
+      text-align: end;
+    }
+
+    .col {
+      padding-bottom: 0px;
+    }
+  }
+
+  .btnAddItem {
+    margin-top: 15px;
+  }
+
+  .bottomSection {
+    margin-top: 10px;
+    /* border: 1px solid crimson; */
+    gap: 10px;
+    height: 40%;
+    .q-field__control {
+      color: $subtleTouch !important;
+      background: none !important;
+    }
+    .q-field__native {
+      color: $subtleTouch !important;
+    }
+  }
+
+  .businessName {
+    width: 275px;
+  }
+
+  .q-field__control {
+    margin-bottom: 0px !important;
+  }
+
+  .header {
+    margin-bottom: 10px;
+    border-bottom: 1px solid gray;
+    gap: 10px;
+  }
+
+  .header .row {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 5px;
+
+    .col {
+      display: flex;
+    }
+  }
+
+  .no-wrap::after {
+    border: 0px;
+    box-shadow: 0px 0px 8px 2px lightgray;
+  }
+
+  .btn {
+    color: white;
+    background: $subtleTouch !important;
+    .q-icon {
+      color: $primary;
+    }
+  }
+
+  .inputLabel .no-wrap::before {
+    box-shadow: none !important;
+    border: none !important;
+  }
+  .inputLabel .no-wrap::after {
+    box-shadow: none !important;
+    border: none !important;
+  }
+
+  .inputLabel:hover {
+    box-shadow: 0px 0px 8px 2px lightgray !important;
+  }
+
+  .invoicePrintBtn {
+    display: flex;
+    justify-content: flex-end !important;
+    .q-btn__wrapper {
+      background: $subtleTouch;
+      color: white;
+
+      .q-icon {
+        padding: 5px !important;
+        color: $primary !important;
+      }
+    }
+  }
+
+  th {
+    width: 25%;
+  }
+}
